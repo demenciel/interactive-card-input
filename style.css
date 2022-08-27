@@ -1,0 +1,430 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Space Grotesk";
+    font-size: 18px;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 2% 0;
+    background-color: white;
+}
+
+.container {
+    width: 90%;
+    height: 90vh;
+    background: url(images/bg-main-desktop.png);
+    background-size: 30% 100%;
+    background-repeat: no-repeat;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0px 10px 13px -7px #000000, 1px -1px 18px 19px rgba(0,0,0,0.35);
+}
+
+/* Card Section */
+
+.cards {
+    width: 50%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* Front Card */
+
+.card-front {
+    background: url(images/bg-card-front.png);
+    background-repeat: no-repeat;
+    width: 24.8rem;
+    height: 13.7rem;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-weight: 300;
+    transform: scale(0.9);
+    position: relative;
+    top: 2rem;
+}
+
+.card-front-container {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+}
+
+.card-logo {
+    margin-bottom: 18%;
+}
+
+.card-info {
+    width: 100%;
+    letter-spacing: 2px;
+}
+
+.card-number {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#card-number {
+    display: inline-block;
+    -webkit-transform: scale(1,.9);
+    -moz-transform: scale(1,.9);
+    -ms-transform: scale(1,.2);
+    -o-transform: scale(1,.9);
+    transform: scale(1.7,1.5);
+}
+
+.card-name-date {
+    margin-top: 8%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Back Card */
+
+.card-back {
+    background: url(images/bg-card-back.png);
+    background-repeat: no-repeat;
+    width: 24.8rem;
+    height: 13.7rem;
+    color: white;
+    font-weight: 300;
+    transform: scale(0.9);
+    position: relative;
+    bottom: 3rem;
+    left: 4rem;
+}
+
+#card-cvc {
+    position: relative;
+    top: 6rem;
+    float: right;
+    margin-right: 2.7rem;
+    transform: scale(1.3);
+}
+
+/* FORM */
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.form{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.form-container {
+    width: 27rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    padding: 4%;
+    border-radius: 10px;
+    border: .2px solid lightslategray;
+}
+
+.red {
+    color: red;
+}
+
+.purple {
+    color: hsl(249, 99%, 64%) to hsl(278, 94%, 30%);
+}
+
+/* Form Name */
+.form-name {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.form-name label {
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-bottom: 0.3rem;
+    letter-spacing: 2px;
+}
+
+
+/* Form Number */
+.form-number {
+    width: 100%;
+    margin-bottom: 1rem;
+
+}
+
+.form-number label {
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-bottom: 0.3rem;
+    letter-spacing: 2px;
+}
+
+
+
+/* Form Date and CVC */
+
+.form-date-cvc {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2rem;
+    align-content: space-between;
+}
+
+.form-date {
+    width: 47%;
+
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.form-date label {
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+
+.form-date input {
+    margin-top: 0.3rem;
+
+}
+
+#date-month {
+    width: 48%;
+    margin-right: .2rem;
+}
+
+#date-year {
+    width: 48%;
+    margin-left: .2rem;
+}
+
+.form-cvc {
+    width: 47%;
+
+}
+
+.form-cvc label {
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+
+.form-cvc input {
+    margin-top: 0.3rem;
+    margin-left: 0.4rem;
+}
+
+.form-button {
+    width: 100%;
+    height: 3.5rem;
+}
+
+.form-button input {
+    width: 100%;
+    height: 100%;
+    background-color: hsl(278, 68%, 11%);
+    border: 0.2px solid;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+}
+
+.confirmation{
+    border-color: green;
+
+}
+
+.error {
+    border-color:hsl(0, 100%, 66%);
+}
+
+.error-text {
+    text-align: right;
+    color: red;
+    padding-bottom: 0;
+}
+
+.error-text-date {
+    color: red;
+    padding-bottom: 0;
+    display: flex;
+
+}
+
+
+
+/* Form Done */
+
+.form-done {
+    width: 27rem;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+}
+
+.done-img {
+    padding-bottom: 5%;
+}
+
+.text {
+    padding-bottom: 5%;
+}
+
+.text h2 {
+    padding-bottom: 2.5%;
+}
+
+/* Responsive */
+
+@media (max-width: 1160px) {
+
+    body {
+        margin: 0;
+    }
+    .container {
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        background: none;
+        box-shadow: none;
+    }
+
+    .cards {
+        width: 100%;
+        height:35%;
+        margin-bottom: -2rem;
+        background: url(images/bg-main-mobile.png) no-repeat;
+        background-size: 100% 70%;
+        justify-content: center;
+    }
+
+    .card-front {
+        position: relative;
+        z-index: 1;
+        top: 10rem;
+        right: 3rem;
+    }
+
+    .card-back {
+        bottom: 13rem;
+        left: 3rem;
+    }
+
+    .form {
+        width: 100%;
+        height: 50%;
+        margin-bottom: 3rem;
+    }
+
+    .form-done {
+        width: 80%;
+        height: 50%;
+        padding: 5% 5%;
+        margin-top: 3rem;
+    }
+
+    .form-button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 630px) {
+    .card-front {
+        transform: scale(0.7);
+    }
+
+    .card-back {
+        transform: scale(0.7);
+    }
+}
+
+@media (max-width: 630px) {
+    .form-container {
+        width: 80%;
+    }
+
+}
+
+@media (max-width: 603px) {
+    .form-container {
+        width: 80%;
+    }
+
+    #cvc {
+        width: 100%;
+    }
+}
+
+@media (max-width: 447px) {
+    .cards {
+        margin-bottom: -7rem;
+        background-size: 100% 50%;
+    }
+
+    .form-date label {
+        font-size: 50%;
+    }
+
+    .card-front {
+        transform: scale(0.7);
+        left: 0rem;
+        top: 7rem;
+    }
+
+    .card-back {
+        transform: scale(0.7);
+        left: 1.5rem;
+    }
+}
+
+@media (max-width: 380px) {
+    .card-front {
+        transform: scale(0.63);
+        left: -1rem;
+        top: 7rem;
+    }
+
+    .card-back {
+        transform: scale(0.63);
+        left: 1.5rem;
+    }
+}
+
+@media (max-width: 357px) {
+    .card-front {
+        transform: scale(0.63);
+        left: 0rem;
+        top: 7rem;
+    }
+
+    .card-back {
+        transform: scale(0.63);
+        left: 0.5rem;
+    }
+
+
+}
+
